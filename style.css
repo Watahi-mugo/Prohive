@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,200&family=Roboto+Condensed:ital,wght@1,300&family=Tagesschrift&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+}
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  background: #0f172a;
+}
+.hover-underline {
+  position: relative;
+  display: inline-block;
+}
+
+.hover-underline::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background-color: #3b82f6; /* Tailwind blue-500 */
+  transition: width 0.3s ease-in-out;
+}
+
+.hover-underline:hover::after {
+  width: 100%;
+}
+.cards {
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  gap: 0.25rem;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+.cards:hover {
+  box-shadow: 0 0 20px #00f7ff;
+}
+#how-it-works {
+  background-color: #1e3a8a;
+}
+
+.step {
+  text-align: center;
+  max-width: 250px;
+}
+
+.step img {
+  transition: transform 0.3s ease;
+}
+
+.step:hover img {
+  transform: scale(1.1);
+}
+
+.step h3 {
+  color: #ffffff;
+  font-size: 1.25rem;
+}
+
+.step p {
+  color: #d1d5db;
+}
+.step i {
+  font-size: 3rem;
+}

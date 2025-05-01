@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PROHIVE</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.tailwindcss.com">
+      /* Your Tailwind CSS configuration goes here */
+      // tailwind.config.js
+    </script>
+  </head>
+  <body class="relative text-white overflow-x-hidden">
+    <div id="particles-js"></div>
+    <div
+      class="h-screen flex flex-col items-center justify-center relative z-10"
+    >
+      <nav
+        class="fixed top-0 left-0 w-full h-16 bg-black z-50 flex items-center justify-between px-6"
+      >
+        <div id="logo" class="text-3xl font-Poppins text-white">
+          <span class="text-blue-600">PRO</span>HIVE.
+        </div>
+
+        <ul id="nav-links" class="flex space-x-6">
+          <li><a href="#home" class="hover-underline text-white">Home</a></li>
+          <li>
+            <a href="#freelancers" class="hover-underline text-white"
+              >Browse Freelancers</a
+            >
+          </li>
+          <li>
+            <a href="#post-job" class="hover-underline text-white"
+              >Post a Job</a
+            >
+          </li>
+          <li>
+            <a href="#about" class="hover-underline text-white">About Us</a>
+          </li>
+          <li>
+            <a href="#contact" class="hover-underline text-white">Contact</a>
+          </li>
+          <li>
+            <a href="#become-freelancer" class="hover-underline text-white"
+              >Become a Freelancer</a
+            >
+          </li>
+        </ul>
+
+        <button
+          id="signup-btn"
+          class="bg-purple-500 text-white px-4 py-1 rounded-full font-semibold hover:bg-purple-600"
+        >
+          Sign Up
+        </button>
+      </nav>
+      <!-- search bar  -->
+      <div class="w-full max-w-xl mt-2 mb-12">
+        <div
+          class="flex items-center bg-white/10 border border-white rounded-full overflow-hidden shadow-lg shadow-blue-500/20 hover:shadow-blue-500/40 transition duration-300"
+        >
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Search skills or services..."
+            class="w-full px-4 py-2 text-white bg-transparent placeholder-white focus:outline-none"
+          />
+          <button class="px-4 py-2 text-white font-semibold">Search</button>
+        </div>
+      </div>
+
+      <h1 class="text-5xl font-bold mb-4">Welcome to Prohive</h1>
+      <p class="text-xl mb-6">Find top freelancers for your next project</p>
+      <button
+        class="bg-yellow-400 text-black px-6 py-2 text-base rounded-full font-semibold hover:bg-yellow-300"
+      >
+        Get Started
+      </button>
+    </div>
+    <section id="freelancers" class="bg-blue-900">
+      <!-- freelancers section  -->
+      <h2 class="text-black text-center text-2xl font-bold mb-4">
+        Explore Popular Categories
+      </h2>
+      <p class="text-white text-center font-bold my-1">
+        Browse top freelance services in demand
+      </p>
+      <div class="flex justify-evenly gap-4 flex-wrap">
+        <div
+          class="cards flex flex-row items-center bg-gray-800 p-4 rounded-lg w-80"
+        >
+          <img
+            src="./Images/What is software engineering_.jpeg"
+            alt=""
+            class="rounded-full w-20 h-20 mr-4"
+          />
+          <div class="flex flex-col">
+            <h3 class="text-white text-xl font-bold mb-1">Web Development</h3>
+            <p class="text-sm text-gray-400 leading-tight">
+              Front-end, back-end, and full-stack solutions.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="cards flex flex-row items-center bg-gray-800 p-4 rounded-lg w-80"
+        >
+          <img
+            src="./Images/Happy young successful it engineer in casualwear looking at you while sitting by workplace against c _ Premium Photo.jpeg"
+            alt=""
+            class="rounded-full w-20 h-20 mr-4"
+          />
+          <div class="flex flex-col">
+            <h3 class="text-white text-xl font-bold mb-1">
+              Writing & Translation
+            </h3>
+            <p class="text-sm text-gray-400 leading-tight">
+              Blog posts, articles, and tutorials.
+            </p>
+          </div>
+        </div>
+        <div
+          class="cards flex flex-row items-center bg-gray-800 p-4 rounded-lg w-80"
+        >
+          <img
+            src="./Images/_E-Learning Implementations_.jpeg"
+            alt=""
+            class="rounded-full w-20 h-20 mr-4"
+          />
+          <div class="flex flex-col">
+            <h3 class="text-white text-xl font-bold mb-1">Graphics Design</h3>
+            <p class="text-sm text-gray-400 leading-tight">
+              Logo design, branding, and visual identity.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- post a job section  -->
+    <section id="how-it-works" class="bg-blue-900 py-16 px-6">
+      <h2 class="text-white text-center text-3xl font-bold mb-8">
+        How It Works
+      </h2>
+      <div class="flex flex-wrap justify-evenly gap-12">
+        <div class="step">
+          <i class="bx bxs-briefcase bx-tada bx-rotate-90" class="mb-4"></i>
+
+          <h3 class="text-white text-xl font-semibold mb-2">Post a Job</h3>
+          <p class="text-gray-300 text-center">
+            Create a job post with details about what you're looking for.
+          </p>
+        </div>
+        <div class="step">
+          <i class="bx bxs-paper-plane bx-tada" class="mb-4"></i>
+          <h3 class="text-white text-xl font-semibold mb-2">Get Proposals</h3>
+          <p class="text-gray-300 text-center">
+            Freelancers send their proposals with rates and timelines.
+          </p>
+        </div>
+        <div class="step">
+          <i
+            class="bx bxs-check-circle bx-flip-vertical bx-spin"
+            class="mb-4"
+          ></i>
+          <h3 class="text-white text-xl font-semibold mb-2">
+            Choose a Freelancer
+          </h3>
+          <p class="text-gray-300 text-center">
+            Review proposals and choose the best freelancer based on skills and
+            budget.
+          </p>
+        </div>
+        <div class="step">
+          <i class="bx bx-task bx-tada" class="mb-4"></i>
+          <h3 class="text-white text-xl font-semibold mb-2">Get Work Done</h3>
+          <p class="text-gray-300 text-center">
+            Work begins, and you pay once the job is complete!
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Updated Client Testimonials Section  -->
+    <section id="testimonials" class="bg-blue-900 pb-12">
+      <h2 class="text-white text-center text-3xl font-bold mb-8">
+        What Our Clients Say
+      </h2>
+      <div class="flex flex-wrap justify-center gap-12">
+        <div
+          class="testimonial text-center max-w-xs bg-gray-700 p-6 rounded-lg shadow-lg"
+        >
+          <img
+            src="./Images/client images/2841c6aa-2847-4681-bf9b-5f0f8b590766.jpeg"
+            alt="Client 1"
+            class="rounded-full w-24 h-24 mx-auto mb-4"
+          />
+          <p class="text-white text-lg mb-4">
+            "This platform exceeded my expectations. I was able to post my job
+            and quickly get proposals from top freelancers who really understood
+            my needs. The entire process from posting to choosing a freelancer
+            was seamless, and I couldn't be happier with the results!"
+          </p>
+          <h4 class="text-white font-semibold text-xl">Emily Johnson</h4>
+          <p class="text-gray-400 text-sm mb-4">CEO, Example Company</p>
+          <div class="flex justify-center gap-1 text-yellow-500">
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star-half"></i>
+          </div>
+        </div>
+        <div
+          class="testimonial text-center max-w-xs bg-gray-700 p-6 rounded-lg shadow-lg"
+        >
+          <img
+            src="./Images/client images/Atendimento ao cliente do call center e retrato do homem com sorriso para consultoria de comunicação e rede crm Entre em contato conosco maquete de suporte e consultor masculino feliz no est.jpeg"
+            alt="Client 2"
+            class="rounded-full w-24 h-24 mx-auto mb-4"
+          />
+          <p class="text-white text-lg mb-4">
+            "As a freelancer, I’ve been using this platform for a while now. The
+            job board is easy to navigate, and I can always find projects that
+            match my skills. The platform made the entire contracting process
+            simple and transparent. I appreciate how well it connects
+            freelancers and clients!"
+          </p>
+          <h4 class="text-white font-semibold text-xl">David Anderson</h4>
+          <p class="text-gray-400 text-sm mb-4">Freelancer (Web Developer)</p>
+          <div class="flex justify-center gap-1 text-yellow-500">
+            <!-- Star Rating -->
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+          </div>
+        </div>
+        <div
+          class="testimonial text-center max-w-xs bg-gray-700 p-6 rounded-lg shadow-lg"
+        >
+          <img
+            src="./Images/client images/Executif Entreprise Au Travail - Photos _ téléchargez gratuitement des images de haute qualité _ Freepik.jpeg"
+            alt="Client 3"
+            class="rounded-full w-24 h-24 mx-auto mb-4"
+          />
+          <p class="text-white text-lg mb-4">
+            "I was skeptical at first, but after posting my job and receiving
+            proposals, I realized how much talent is available. The freelancer I
+            hired delivered exceptional results and exceeded all my
+            expectations. I highly recommend this platform to anyone looking for
+            quality work!"
+          </p>
+          <h4 class="text-white font-semibold text-xl">Michael Thompson</h4>
+          <p class="text-gray-400 text-sm mb-4">Small Business Owner</p>
+          <div class="flex justify-center gap-1 text-yellow-500">
+            <!-- Star Rating -->
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star-half"></i>
+            <i class="bx bx-star"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer  -->
+    <footer
+      class="bg-gradient-to-r from-purple-900 to-gray-900 text-white py-16 px-16"
+    >
+      <div
+        class="container mx-auto flex flex-row justify-between items-start gap-x-1 mb-12"
+      >
+        <div class="w-full md:1/3 mb-8 md:mb-0">
+          <h3 class="text-2xl font-extrabold mb-4 text-blue-500">
+            About Prohive
+          </h3>
+          <p clas="text-gray-300 text-base">
+            Prohive connects businesses with top-rated freelancers. Whether you
+            need web development, design, or marketing services, Prohive has a
+            network of experts ready to help you.
+          </p>
+          <a
+            href=""
+            class="text-blue-500 hover:underline mt-4 inline-block text-lg"
+            >Learn more about us</a
+          >
+        </div>
+        <div class="w-full md:1/3 mb-8 md:mb-0 mx-20">
+          <h3 class="text-xl font-extrabold mb-4 text-blue-500">Quick links</h3>
+          <ul class="space-y-4 text-lg">
+            <li><a href="" class="hover:text-blue-800">Home</a></li>
+            <li>
+              <a href="" class="hover:text-blue-800">Browse Freelancers</a>
+            </li>
+            <li><a href="" class="hover:text-blue-800">Post a Job</a></li>
+            <li><a href="" class="hover:text-blue-800">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="w-full md:w-1/3">
+          <h3 class="text-xl font-extrabold mb-4 text-blue-500">
+            Help & Support
+          </h3>
+          <ul class="space-y-4 text-lg">
+            <li><a href="" class="hover:text-blue-800">FAQs</a></li>
+            <li><a href="" class="hover:text-blue-800">Terms of Service</a></li>
+            <li><a href="" class="hover:text-blue-800">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="flex justify-center items-center space-x-4 mb-12">
+        <a href="" class="hover:text-blue-500 text-4xl transition-all"
+          ><i class="bx bxl-facebook-circle"></i
+        ></a>
+        <a href="" class="hover:text-blue-500 text-4xl transition-all"
+          ><i class="bx bxl-linkedin"></i
+        ></a>
+
+        <a
+          href="#"
+          class="text-white text-4xl hover:text-pink-500 transition duration-300 hover:drop-shadow-glow"
+        >
+          <i class="bx bxl-instagram"></i>
+        </a>
+
+        <a href="" class="hover:text-green-500 text-4xl transition-all"
+          ><i class="bx bxl-whatsapp"></i
+        ></a>
+      </div>
+      <div class="bg-gray-700 py-8 px-6 text-center rounded-md">
+        <h3 class="text-xl text-white font-semibold mb-4">
+          Stay Updated with Prohive
+        </h3>
+        <p class="text-gray-300 mb-4">
+          Subscribe to our newsletter for the latest updates and freelancer
+          tips!
+        </p>
+        <form class="flex justify-center">
+          <input
+            type="email"
+            class="p-2 rounded-l-lg w-1/2 md:w-1/3"
+            placeholder="Your email"
+            required
+          />
+          <button
+            type="submit"
+            class="bg-yellow-400 text-black p-2 rounded-r-lg hover:bg-yellow-500 transition-colors"
+          >
+            Subscribe
+          </button>
+        </form>
+      </div>
+
+      <div class="text-center text-gray-400 mt-16">
+        <p>&copy; 2025 Prohive. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
