@@ -25,3 +25,18 @@ particlesJS("particles-js", {
     },
   },
 });
+
+// navigation bar toggle
+const toggleBtn = document.getElementById("menu-toggle");
+const navLinks = document.getElementById("nav-links");
+
+toggleBtn.addEventListener("click", () => {
+  navLinks.classList.toggle("hidden");
+});
+
+//buttons redirect
+const signupBtn = document.getElementById("signupbtn");
+
+signupBtn.addEventListener("click", function () {
+  window.location.href = "sign up.html";
+});
